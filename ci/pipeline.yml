@@ -1,0 +1,21 @@
+---
+jobs:
+  - name: send-messages-job
+    plan:
+      - get: some-random-time
+        trigger: true
+      - task: simple-task
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source: { repository: twilio/twilio-cli }
+          run:
+            path: twilio
+
+resources:
+  - name: some-random-time
+    type: time
+    icon: clock-outline
+    source:
+      interval: 30s
