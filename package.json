@@ -1,0 +1,24 @@
+{
+  "name": "remind-me",
+  "version": "1.0.0",
+  "description": "Recieve scheduled SMS reminders",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mallett002/remind-me.git"
+  },
+  "author": "William Mallett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mallett002/remind-me/issues"
+  },
+  "homepage": "https://github.com/mallett002/remind-me#readme",
+  "dependencies": {
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
+  }
+}
